@@ -1,0 +1,226 @@
+body{overflow-x:hidden;font-family: "proxima-nova-alt", Arial, Helvetica, sans-serif;}
+p{line-height: 1.25em;}
+img{max-width: 100%;}	
+
+
+/* Importante!!! Usar isso para não receber span (usar isso + o formulário.JS) */
+.formphp label.nao-aparece, .formphp input.nao-aparece {
+	display: none !important;
+}
+
+#form-erro span, #form-send span  {
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#form-send {
+	color: #31aa39;
+}
+
+#form-erro {
+	color: #f64540;
+}
+/* Importante!!! Usar isso para não receber span  */
+
+
+
+
+.subtitulo {
+	margin-top: 50px;
+	font-size: 2.25em;;
+	font-weight: bold;
+	letter-spacing: .1em;
+	color: #11425d;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.subtitulo:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 2px;
+	background: #fca915;
+	margin: 5px auto 0px auto;
+}
+
+
+
+.header{border-bottom: 1px solid #f2f2f2; padding: 30px;}
+.header-logo{animation-name: logo;animation-duration: 2s;}
+.header-logo, nav.header-nav ul {text-align: center;}
+.header-nav, .footer{animation-name: navegacao;animation-duration: 2s;}
+.header-nav ul {margin-top: -4px;}
+.header-nav li {display: inline-block;margin: 30px 10px 10px 10px;}
+.header-nav a {font-size: 1em; line-height: 1.25em;color: #11425d;padding: 5px 0px;}
+.header-nav a:hover, a.nav_ativo  {border-bottom: 2px solid  #fca915;}
+.header-nav li.threeline-icon {display: none;}
+.header-nav li.threeline-icon:hover {color: #11425d;cursor: pointer;}
+
+.capa {
+	margin: 50px auto;
+
+}
+
+.profile-pic img {
+	border-radius: 100%;
+	animation-name: profile-img;
+	animation-duration: 2s;
+
+}
+
+.profile-title {
+	max-width: 62%;	
+	margin: 56px 0px 56px  40px;
+
+}
+
+.profile-title h1 {		
+	font-family: 'Quicksand', sans-serif;
+	font-size: 4.5em;	
+	color: #11425d;
+}
+
+.profile-title h1:after {
+	background: #fca915;
+	content: "";
+	display: block;
+	height: 2px;	
+	margin-bottom: 15px;
+	width: 30%;
+
+}
+.profile-title h2 {
+	color: #545454;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 2em;
+	animation-name: conteudo;
+	animation-duration: 3s;
+
+
+}
+.profile-title h1, .quote-externo {
+	animation-name: titulo-inicio;
+	animation-duration: 3s;
+
+}
+
+
+.quote-externo {
+	padding-top: 50px;
+	max-width: 36%;	
+	color: #11425d;
+	text-align: center;
+	border-top: 1px solid #f2f2f2;
+
+}
+
+.quote-externo p {
+	font-style: italic;
+}
+
+.quote-externo p:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 2px;
+	background: #fca915;
+	margin: 12px auto;
+}
+
+.quote-externo cite {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: .1em;
+}
+
+.footer {
+	width: 100%;
+	margin-top:50px;
+	border-top: 1px solid #f2f2f2;
+}
+
+.footer_redes ul{
+	margin: 30px 0px;
+	float: right;
+
+}
+
+.footer_redes li{
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 5px;
+
+	
+
+}
+
+.footer_redes ul li a {
+	
+	display: block;
+	border: 2px solid  #fca915;
+	border-radius: 6px;
+	padding: 8px 8px 5px 8px;
+	transition: all .5s ease; /* animação suavizada */
+
+}
+
+.footer_redes ul li a:hover {
+	border-color: #11425d;
+}
+
+
+.copy  {
+	color: #a3a3a3;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size:1em;	
+	line-height: 1.25em;
+	text-align: left;
+	position: relative;
+	top: 45px;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@keyframes profile-img {
+	0% {opacity: 0; transform: translate(0px,20px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+@keyframes titulo-inicio {
+	0% {opacity: 0; transform: translate(0px,-20px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+
+}
+
+@keyframes conteudo {
+	0% {opacity: 0; transform: translate(-20px,0px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+
+@keyframes navegacao {
+	0% {opacity: 0;}
+	50%{opacity:0;}
+	100% {opacity: 1}
+}
+
+@keyframes logo {
+	0% {opacity: 0; transform: translate(0px,20px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+

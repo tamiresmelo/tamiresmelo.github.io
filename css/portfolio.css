@@ -1,0 +1,266 @@
+.trabalhos {
+  position: relative;
+  margin-top: 50px;
+  width:632px;
+  height: 300px;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+    border-radius: 10px;
+}
+
+.trabalhos img{
+  border-radius: 10px;
+}
+
+.trabalhos:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .7);
+}
+
+.button {
+  position: absolute;
+  left:auto;
+ top: 142px;
+left: 221px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+  border-radius: 15px;
+}
+
+.button p {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #fff;
+  z-index: 1;
+  border-radius: 10px;
+
+}
+
+.trabalhos:hover .button {
+  opacity: 1;
+}
+
+
+
+.projeto-info {
+	margin: 66px 0 auto 28px;
+
+
+}
+
+.projeto-info span {
+	font-size: 0.875em;
+	text-transform: uppercase;
+	color: #fca915;
+} 
+
+
+.projeto-info h2 {
+	margin: 10px 0 15px 0;
+	font-size: 2em;
+	color: #11425d;
+}
+
+.projeto-info p {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.125em;
+	line-height: 1.3em;
+	text-transform: none;
+	font-weight: 100px;
+	color: #545454;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+.portfolio_lista{	
+	margin: 50px auto 0 auto;
+}
+
+.trab-1{
+	background: url("../img/portfolio/prograd.jpg") no-repeat center;
+
+}
+.trab-2{
+	background: url("../img/portfolio/meu-site.jpg") no-repeat center;
+
+}
+.trab-3{
+	background: url("../img/portfolio/id-gestao.jpg") no-repeat center;
+
+}
+
+.trab-4{
+	background: url("../img/portfolio/ciclo.jpg") no-repeat center;
+
+}
+
+.trab-5{
+	background: url("../img/portfolio/biblioteconomia.jpg") no-repeat center;
+
+}
+
+.trab-6{
+	background: url("../img/portfolio/id-ipsif.jpg") no-repeat center;
+
+}
+
+.trab-7{
+	background: url("../img/portfolio/robot.jpg") no-repeat center;
+
+}
+
+.trab-8{
+	background: url("../img/portfolio/luminaria.jpg") no-repeat center;
+
+}
+
+
+
+.btn {
+	border-radius: 10px;
+	border: 1px solid #11425d;
+	padding: 10px 20px;
+	color: #11425d;
+	font-size: 1em;
+	line-height: 1.25em;
+	position: relative;
+	top: 126px;
+	left: 200px;
+	display:none;
+	z-index: 10;
+}
+
+.projeto-img:hover .btn {
+		display:block;
+		width: 41%;
+		background:  #11425d;
+
+}
+
+
+
+.projeto-img {		
+	height: 300px;	
+	border: 2px solid  #f2f2f2;
+	border-radius: 15px;
+
+}
+
+
+
+
+.projeto-info {
+	margin: 64.5px 0 auto 28px;
+
+}
+
+.projeto-info span {
+	font-size: 0.875em;
+	text-transform: uppercase;
+	color: #fca915;
+} 
+
+
+.projeto-info h2 {
+	margin: 10px 0 15px 0;
+	font-size: 2em;
+	color: #11425d;
+}
+
+.projeto-info p {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.125em;
+	line-height: 1.3em;
+	text-transform: none;
+	font-weight: 100px;
+	color: #545454;
+}
+
+.btn-top span a{
+	border: 1px solid #fca915;
+	padding: 10px;
+	float: right;
+	cursor: pointer;
+	transition: all .5s ease; 
+}
+.btn-top span a:hover {
+	 color:#11425d;
+	 border: 1px solid #11425d;
+}
+
+
+*/
