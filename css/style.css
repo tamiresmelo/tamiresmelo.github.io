@@ -1,6 +1,40 @@
-/* ----- Gerais ----- */
-body {
-	font-family: "Quicksand", Helvetica, Arial, sans-serif;
+/* -------------- Resets -------------- */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+p, 
+blockquote, 
+a, 
+img, 
+ul, 
+li, 
+form, 
+label, 
+footer, 
+header, 
+nav, 
+section, 
+main {
+	border: 0;
+	font-family: "Nunito", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
 }
 
 img {
@@ -8,12 +42,114 @@ img {
 	max-width: 100%;
 }	
 
-* {
-	box-sizing: border-box;
+/* -------------- Gerais (Estilos que se repetem) -------------- */
+.cabecalho,
+.principal-container {
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
+.cabecalho,
+.cabecalho-menu ul,
+.principal-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.cabecalho-menu a:hover,
+.menu-ativo {
+	border-bottom: 2px solid #fca915;
+}
+
+
+
 /*
-formulário
+Cabeçalho
+*/
+.cabecalho {
+	align-items: center;
+	flex-direction: column;
+}
+
+.cabecalho-logo img {
+	margin: 30px 0 20px 0;
+}
+
+.cabecalho-menu ul {
+	padding: 0 10px 20px 10px;
+}
+
+.cabecalho-menu li {
+	margin: 5px; 
+}
+
+.cabecalho-menu a {
+	color: #11425d;
+	font-size: 1.25em;
+	line-height: 1.4;
+	display: block;
+	padding: 5px;
+}
+
+
+/*
+Conteúdo principal da index
+*/
+.principal {
+	border-bottom: 2px solid #f2f2f2;
+	border-top: 2px solid #f2f2f2;
+	padding: 50px 10px;
+
+}
+
+.introducao-imagem img {
+	border-radius: 50%;
+}
+
+.introdução-conteudo {
+	flex: 2 1 250px;
+	margin: 50px 10px 50px 50px;
+	max-width: 600px;
+	align-self: center;
+
+}
+
+.introdução-conteudo h1 {
+	font-size: 4.5em;	
+	line-height: 1.2em;
+	color: #11425d;
+	font-weight: 300;
+	margin-bottom: 30px;
+
+}
+
+.introdução-conteudo h1:after {
+	background: #fca915;
+	content: "";
+	display: block;
+	height: 3px;	
+	width: 20%;
+
+}
+
+.introdução-conteudo p {
+	font-size: 1.25em;
+	line-height: 1.4;
+	color: #7c7c7c;
+}
+
+
+	
+/*
+Footer
+*/
+
+
+
+/* -------------- Contato -------------- */
+/*
+Formulário Contato
 */
 .formphp label.nao-aparece,
 .formphp input.nao-aparece {
@@ -36,67 +172,10 @@ formulário
 	color: #f64540;
 }
 
-/* ----- Geral ----- */
 
-/*
-Cabeçalho
-*/
-.cabecalho {
-	flex-direction: column;
-	align-items: center;
+/* ----- Media Queries ----- */
+@media only screen and (max-width: 767px) {
+	.cabecalho-menu a {
+		font-size: 1.125em;
+	}
 }
-
-.cabecalho,
-.principal {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 1140px;
-	margin: 0 auto;
-}
-
-.cabecalho-logo {
-	margin: 30px 0;
-}
-
-.menu-navegacao ul {
-	display: flex;
-	padding: 10px 0;
-}
-
-.menu-navegacao li {
-	padding: 0 10px;
-}
-
-.menu-navegacao a {
-	color: #11425d;
-	font-size: 1.25em;
-	line-height: 1.4;
-	padding: 5px 0;
-}
-
-.menu-navegacao a:hover,
-.menu-ativo {
-	border-bottom: 2px solid #fca915;
-}
-
-.principal-introducao {
-	display: flex;
-	margin: 30px 0;
-	padding: 60px 0;
-	border-top: 2px solid #f2f2f2;
-}
-
-.introducao-imagem img {
-	border-radius: 50%;
-}
-
-
-/*
-Principal
-*/
-
-/*
-Footer
-*/
-
-
