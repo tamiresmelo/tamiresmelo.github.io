@@ -149,28 +149,6 @@ Footer
 
 /* -------------- Contato -------------- */
 /*
-Formulário Contato
-*/
-.formphp label.nao-aparece,
-.formphp input.nao-aparece {
-	display: none !important;
-}
-
-#form-erro span,
-#form-send span {
-	display: block;
-	font-size: 1.25em;
-	line-height: 1.4;
-	margin-bottom: 10px;
-}
-
-#form-send {
-	color: #31aa39;
-}
-
-#form-erro {
-	color: #f64540;
-}
 
 
 /* ----- Media Queries ----- */
