@@ -44,14 +44,18 @@ img {
 
 /* -------------- Gerais (Estilos que se repetem) -------------- */
 .cabecalho,
-.principal-container {
+.introducao-container,
+.introducao-citacao,
+.setas {
 	max-width: 1140px;
 	margin: 0 auto;
 }
 
 .cabecalho,
 .cabecalho-menu ul,
-.principal-container {
+.introducao-container,
+.introducao-citacao,
+.setas {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -62,6 +66,33 @@ img {
 	border-bottom: 2px solid #fca915;
 }
 
+.cabecalho-menu a, 
+.introducao-conteudo p {
+	font-size: 1.25em;
+	line-height: 1.4;
+}
+
+.portfolio h2 {
+	margin-top: 60px;
+	font-size: 3em;
+	line-height: 1;
+	letter-spacing: .1em;
+	color: #11425d;
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.portfolio h2:after {
+	content: "";
+	display: block;
+	width: 70px;
+	height: 3px;
+	background-color: #fca915;
+	margin: 10px auto;
+}
+
+/* -------------- Gerais (Estilos que se repetem) -------------- */
 
 
 /*
@@ -86,60 +117,133 @@ Cabeçalho
 
 .cabecalho-menu a {
 	color: #11425d;
-	font-size: 1.25em;
-	line-height: 1.4;
 	display: block;
 	padding: 5px;
 }
 
-
 /*
-Conteúdo principal da index
+Conteúdo de introdução
 */
-.principal {
-	border-bottom: 2px solid #f2f2f2;
+.introducao {
 	border-top: 2px solid #f2f2f2;
 	padding: 50px 10px;
-
 }
 
 .introducao-imagem img {
 	border-radius: 50%;
 }
 
-.introdução-conteudo {
-	flex: 2 1 250px;
-	margin: 50px 10px 50px 50px;
-	max-width: 600px;
+.introducao-conteudo {
 	align-self: center;
-
+	margin: 60px 10px 60px 60px;
+	max-width: 600px;
 }
 
-.introdução-conteudo h1 {
-	font-size: 4.5em;	
-	line-height: 1.2em;
+.introducao-conteudo h1 {
 	color: #11425d;
+	font-size: 4.5em;	
 	font-weight: 300;
+	line-height: 1.2em;
 	margin-bottom: 30px;
-
 }
 
-.introdução-conteudo h1:after {
-	background: #fca915;
+.introducao-conteudo h1:after {
+	background-color: #fca915;
 	content: "";
 	display: block;
 	height: 3px;	
 	width: 20%;
-
 }
 
-.introdução-conteudo p {
-	font-size: 1.25em;
-	line-height: 1.4;
+.introducao-conteudo p {
 	color: #7c7c7c;
 }
 
+.introducao-citacao {
+	border-top: 2px solid #f2f2f2;
+	border-bottom: 2px solid #f2f2f2;
+	padding: 30px 10px;
+	max-width: 700px;	
+}
 
+.introducao-citacao p {
+	color: #11425d;
+	font-style: italic;
+}
+
+.introducao-citacao p:after {
+	background-color: #fca915;
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 10px auto;
+	width: 60px;
+}
+
+.introducao-citacao cite {
+	color: #11425d;
+	font-weight: bold;
+}
+
+.setas {
+	padding: 60px 0;
+}
+
+.setas a:before {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+}
+
+.setas a {
+	cursor: pointer;
+	position: absolute;
+}
+
+.setas a {
+	border-left: 0;
+	border-top: 0;
+	border-right: 2px  #fca915 solid;
+	border-bottom: 2px  #fca915 solid;
+	height: 40px;
+	left:50%;
+	margin: -20px 0 0 -20px;
+	width: 40px;
+	-webkit-transform: rotate(45deg);
+}
+  
+.setas a:before {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: setas;
+	border-left: 0;
+	border-top: 0;
+	border-right: 1px  #fca915 solid;
+	border-bottom: 1px  #fca915 solid;
+	content: '';
+	height: 20px;
+	margin: -10px 0 0 -10px;
+	width: 20px;	
+}
+	@keyframes setas {
+		0%{
+			opacity: 1;
+		} 100%{
+		    opacity: 0;
+		    transform: translate(-10px, -10px);
+		}
+
+/*
+Portfólio
+*/
+
+
+
+
+  
+  
+  
+  
 	
 /*
 Footer
