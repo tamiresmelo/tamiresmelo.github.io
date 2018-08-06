@@ -83,7 +83,7 @@ img {
 	letter-spacing: .1em;
 	color: #11425d;
 	text-align: center;
-	font-weight: normal;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 
@@ -207,8 +207,8 @@ Conteúdo de introdução
 .setas a {
 	border-left: 0;
 	border-top: 0;
-	border-right: 2px  #fca915 solid;
-	border-bottom: 2px  #fca915 solid;
+	border-right: 2px #fca915 solid;
+	border-bottom: 2px #fca915 solid;
 	height: 40px;
 	left:50%;
 	margin: -20px 0 0 -20px;
@@ -222,8 +222,8 @@ Conteúdo de introdução
 	animation-name: setas;
 	border-left: 0;
 	border-top: 0;
-	border-right: 1px  #fca915 solid;
-	border-bottom: 1px  #fca915 solid;
+	border-right: 1px #fca915 solid;
+	border-bottom: 1px #fca915 solid;
 	content: '';
 	height: 20px;
 	margin: -10px 0 0 -10px;
@@ -241,32 +241,19 @@ Conteúdo de introdução
 /*
 Portfólio
 */
+.portfolio h3 {
+	color: #7c7c7c;
+	margin: 0 20px 30px 20px;
+	font-weight: normal;
+}
 
 .trabalhos {
 display: flex;
 flex-wrap: wrap;
-
-}
-
-.overlay {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-  transition: background 0.5s ease;
-   border-radius: 10px;
 }
 
 .trabalhos img{
   border-radius: 10px;
-}
-
-.trabalhos:hover .overlay {
-
-	width: 100%;
-	height: 100%;
- 
-  background: rgba(0, 0, 0, .2);
 }
 
 .button {
@@ -364,5 +351,69 @@ Footer
 	/*
 	Portfólio
 	*/
+	.portfolio h2 {
+		font-size: 2.25em;
+		padding: 30px 0;
+	}
+	.trabalhos li {
+		margin: 10px;
+		border: 2px solid #f2f2f2;
+		padding: 10px;
+		border-radius: 10px;
+	}
+	.trabalhos li a {
+		display: block;
+	}
+	.trabalhos li img,
+	.trabalhos li:hover {
+		border: 2px solid #fca915;
+		transition: all .5s ease;
+	}
+
+	.trabalhos span {
+		font-size: 0.875em;
+		color: #ccc;
+		display: flex;
+		justify-content: center;
+	} 
+
+	.trabalhos p {
+		margin-top: 10px;
+		font-size: 1.5em;
+		color: #11425d;
+		text-align: center;
+	}
+
+	.trabalhos span:after, .trabalhos span:before {
+		content: '';
+		position: relative;
+		top: 8px;
+		width: 15px;
+		height: 2px;
+		background-color: #fca915;
+		margin: 0 5px;
+	
+	}
+
+	.portfolio button {
+		background-color: transparent;
+		border: 0;
+		margin: 30px;
+	}
+
+	.portfolio-btn {
+		border: 2px solid #fca915;
+		border-radius: 5px;
+		color: #fca915;		
+		padding: 10px 20px;
+		margin: 0;
+		transition: all .5s ease;
+	}
+
+	.portfolio-btn:hover, .portfolio-btn a:hover {
+		background-color: #fca915;
+		color: #fff;
+	}
+
 
 }
