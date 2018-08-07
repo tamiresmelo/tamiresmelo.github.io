@@ -108,6 +108,18 @@ Cabeçalho
 	align-items: center;
 	flex-direction: column;
 }
+.cabecalho-menu {
+	align-self: center;
+}
+.cabecalho-logo {
+	width: 100px;
+}
+
+.cabecalho-logo img {
+	margin: 0px auto;	
+	width: 100%;	
+
+}
 
 .cabecalho-logo img {
 	margin: 30px 0 20px 0;
@@ -305,9 +317,12 @@ Footer
 	/*
 	Cabeçalho
 	*/
+	.cabecalho-logo{
+		width: 70px;
+	}
 	.cabecalho-logo img {
 		margin: 10px auto;
-		width: 40%;	
+		width: 100%;	
 	}
 
 	.cabecalho-menu ul {
@@ -485,7 +500,7 @@ Footer
 	}
 
 	.contato li {
-		margin: 20px;
+		margin: 15px;
 		border: 2px solid #11425d;
 		border-radius: 10px;
 	}
@@ -501,7 +516,7 @@ Footer
 	}
 	.rodape {
 		color: #525252;
-		padding: 20px;
+		padding: 15px;
 		background-color: #f2f2f2;
 
 	}
