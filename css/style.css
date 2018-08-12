@@ -44,23 +44,282 @@ img {
 }	
 
 /* -------------- Gerais (Estilos que se repetem) -------------- */
-.cabecalho,
-.container,
-.introducao-citacao,
-.setas,
-.portfolio {
-	max-width: 1140px;
+.container {
+	max-width: 1280px;
 	margin: 0 auto;
 }
 
-.cabecalho,
-.cabecalho-menu ul,
-.container,
-.introducao-citacao,
-.setas,
-.portfolio,
-.trabalhosm
+.cabecalho > div {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/*
+Cabeçalho
+*/
+.cabecalho {
+	background-color: #5c7a99;
+}
+
+.cabecalho-logo {
+	width: 100px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.cabecalho-menu ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.cabecalho-menu li {
+	margin: 5px;
+	border: 2px solid #fd8283;
+	flex: 1 2;
+
+}
+
+.cabecalho-menu a {
+	font-size: 1.25em;	
+	padding: 10px 25px;
+	color: #F2FAFF;	
+	display: flex;
+	justify-content: center;
+	transition: all .3s ease;
+}
+
+.cabecalho-menu a:hover {
+	background-color: #fd8283;	
+}
+
+/*
+Introdução
+*/
+.introducao-imagem {
+	margin-bottom: 30px;
+
+
+}
+
+.introducao {
+	padding: 30px 10px;
+}
+
+.introducao-conteudo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 10px 0;		
+}
+
+.introducao-conteudo h1 {
+	font-size: 3.5em;	
+	text-align: center;
+	color: #5c7a99;
+}
+
+.introducao-conteudo h1:after {
+	margin: 0 auto;
+}
+.introducao-conteudo p {
+	font-size: 1.125em;
+	line-height: 1.25em;
+	margin: 5px 20px;
+	text-align: left;
+	color: #8fa1b3;
+	
+}
+
+.introducao-citacao {
+	padding: auto 25px;
+	text-align: center;
+	background-color: #f2f2f2;	
+}
+
+.setas {
+	display: none;
+}
+/*
+Portfólio
+*
+
+.portfolio {
+	margin: 10px;
+}
+
+.trabalhos li {
+	border: 2px solid #f2f2f2;
+	border-radius: 10px;	
+	padding: 10px;	
+	margin-top: 20px;	
+}
+.trabalhos li a {
+	display: block;
+}
+.trabalhos li img,
+.trabalhos li:hover {
+	border: 2px solid #fca915;
+	transition: all .5s ease;
+}
+
+.trabalhos span {
+	color: #ccc;
+	display: flex;
+	font-size: 0.875em;		
+	justify-content: center;
+} 
+
+.trabalhos p {
+	color: #11425d;		
+	font-size: 1.5em;
+	margin-top: 10px;		
+	text-align: center;
+}
+
+.trabalhos span:after,
+.trabalhos span:before {
+	background-color: #fca915;
+	content: '';
+	height: 2px;
+	margin: 0 5px;
+	position: relative;
+	top: 8px;
+	width: 15px;
+}
+
+.portfolio button {
+	background-color: transparent;
+	border: 0;
+	margin: 30px;
+}
+
+.portfolio-btn {
+	border: 2px solid #fca915;
+	border-radius: 5px;
+	color: #fca915;	
+	margin: 0;	
+	padding: 10px 20px;		
+	transition: all .5s ease;
+}
+
+.portfolio-btn:hover, .portfolio-btn a:hover {
+	background-color: #fca915;
+	color: #fff;
+}
+/*
+Currículo
+*
 .curriculo {
+	background-color: #f2f2f2;
+	padding-bottom: 30px;
+}
+.curriculo-sobre {
+	margin: 0 10px;
+	padding: 10px;
+	border-bottom: 5px solid #f2f2f2;
+}
+.curriculo h3 {
+	border-left: 3px solid #fca915;
+	padding: 0px 5px;
+	color: #11425d;
+	font-size: 1.5em;
+	margin: 0px;
+	margin: 10px 0;
+}
+.curriculo p {
+	color: #525252;
+}
+
+.curriculo-competencias {
+	margin: 30px 20px;
+	
+}
+
+.curriculo-competencias p {
+	color: #fca915;
+
+}
+.curriculo-competencias li {
+	padding: 5px 30px;
+	color: #11425d;
+
+}
+.curriculo-competencias li:before {
+	background-color: #ccc;
+	content: '';
+	display: block;
+	height: 2px;
+	margin: 0 5px;
+	position: relative;
+	top: 12px;
+	left: -25px;
+	width: 10px;
+}
+.contato ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 30px 10px;
+}
+
+.contato li {
+	margin: 15px;
+	border: 2px solid #11425d;
+	border-radius: 10px;
+}
+.contato a {
+	display: flex;
+	padding: 15px;
+}
+
+.contato li:hover {
+	background-color: #11425d;
+	border: 2px solid #11425d;
+
+}
+.rodape {
+	color: #525252;
+	padding: 15px;
+	background-color: #f2f2f2;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+.cabecalho {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -98,22 +357,21 @@ img {
 	margin: 10px auto;
 }
 
-/* -------------- Gerais (Estilos que se repetem) -------------- */
+/* -------------- Gerais (Estilos que se repetem) -------------- 
 
 
 /*
 Cabeçalho
-*/
+*
 .cabecalho {
 	align-items: center;
 	flex-direction: column;
+	background-color: #5C7A99;
 }
 .cabecalho-menu {
 	align-self: center;
 }
-.cabecalho-logo {
-	width: 100px;
-}
+
 
 .cabecalho-logo img {
 	margin: 0px auto;	
@@ -141,7 +399,7 @@ Cabeçalho
 
 /*
 Conteúdo de introdução
-*/
+*
 .introducao {
 	border-top: 2px solid #f2f2f2;
 	padding: 50px 10px;
@@ -252,7 +510,7 @@ Conteúdo de introdução
 
 /*
 Portfólio
-*/
+*
 .portfolio h3 {
 	color: #7c7c7c;
 	margin: 0 20px 10px 20px;
@@ -306,222 +564,16 @@ Footer
 
 /* ----- Media Queries ----- */
 @media only screen and (max-width: 767px) {
+
+}
 	/*
 	Gerais - Estilos que se repetem
-	*/
+	
 	.portfolio h2,
 	.curriculo h2 {
 		font-size: 2.25em;
 		padding: 30px 0;
 	}
-	/*
-	Cabeçalho
-	*/
-	.cabecalho-logo{
-		width: 70px;
-	}
-	.cabecalho-logo img {
-		margin: 10px auto;
-		width: 100%;	
-	}
-
-	.cabecalho-menu ul {
-		padding-bottom: 10px;
-	}
-
-	.cabecalho-menu a {
-		font-size: 1.125em;		
-	}
-	.cabecalho-menu a:hover {
-		border-bottom: none;
-}
-	/*
-	Introdução
-	*/
-	.introducao-imagem img {
-		width: 70%;
-		margin: 0 auto;
-	}
-
-	.introducao {
-		padding: 30px 0;
-	}
-
-	.introducao-conteudo {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin: 10px 0;		
-	}
-
-	.introducao-conteudo h1 {
-		font-size: 3.5em;	
-		text-align: center;
-	}
-
-	.introducao-conteudo h1:after {
-		margin: 0 auto;
-	}
-	.introducao-conteudo p {
-		margin: 0 30px;
-		text-align: left;
-		
-	}
-
-	.introducao-citacao {
-		padding: auto 25px;
-		text-align: center;
-		background-color: #f2f2f2;	
-	}
-
-	.setas {
-		display: none;
-	}
-	/*
-	Portfólio
-	*/
-
-	.portfolio {
-		margin: 10px;
-	}
-
-	.trabalhos li {
-		border: 2px solid #f2f2f2;
-		border-radius: 10px;	
-		padding: 10px;	
-		margin-top: 20px;	
-	}
-	.trabalhos li a {
-		display: block;
-	}
-	.trabalhos li img,
-	.trabalhos li:hover {
-		border: 2px solid #fca915;
-		transition: all .5s ease;
-	}
-
-	.trabalhos span {
-		color: #ccc;
-		display: flex;
-		font-size: 0.875em;		
-		justify-content: center;
-	} 
-
-	.trabalhos p {
-		color: #11425d;		
-		font-size: 1.5em;
-		margin-top: 10px;		
-		text-align: center;
-	}
-
-	.trabalhos span:after,
-	.trabalhos span:before {
-		background-color: #fca915;
-		content: '';
-		height: 2px;
-		margin: 0 5px;
-		position: relative;
-		top: 8px;
-		width: 15px;
-	}
-
-	.portfolio button {
-		background-color: transparent;
-		border: 0;
-		margin: 30px;
-	}
-
-	.portfolio-btn {
-		border: 2px solid #fca915;
-		border-radius: 5px;
-		color: #fca915;	
-		margin: 0;	
-		padding: 10px 20px;		
-		transition: all .5s ease;
-	}
-
-	.portfolio-btn:hover, .portfolio-btn a:hover {
-		background-color: #fca915;
-		color: #fff;
-	}
-	/*
-	Currículo
-	*/
-	.curriculo {
-		background-color: #f2f2f2;
-		padding-bottom: 30px;
-	}
-	.curriculo-sobre {
-		margin: 0 10px;
-		padding: 10px;
-		border-bottom: 5px solid #f2f2f2;
-	}
-	.curriculo h3 {
-		border-left: 3px solid #fca915;
-		padding: 0px 5px;
-		color: #11425d;
-		font-size: 1.5em;
-		margin: 0px;
-		margin: 10px 0;
-	}
-	.curriculo p {
-		color: #525252;
-	}
-
-	.curriculo-competencias {
-		margin: 30px 20px;
-		
-	}
-
-	.curriculo-competencias p {
-		color: #fca915;
-
-	}
-	.curriculo-competencias li {
-		padding: 5px 30px;
-		color: #11425d;
-
-	}
-	.curriculo-competencias li:before {
-		background-color: #ccc;
-		content: '';
-		display: block;
-		height: 2px;
-		margin: 0 5px;
-		position: relative;
-		top: 12px;
-		left: -25px;
-		width: 10px;
-	}
-	.contato ul {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 30px 10px;
-	}
-
-	.contato li {
-		margin: 15px;
-		border: 2px solid #11425d;
-		border-radius: 10px;
-	}
-	.contato a {
-		display: flex;
-		padding: 15px;
-	}
-
-	.contato li:hover {
-		background-color: #11425d;
-		border: 2px solid #11425d;
-
-	}
-	.rodape {
-		color: #525252;
-		padding: 15px;
-		background-color: #f2f2f2;
-
-	}
-
-
 
 
 
