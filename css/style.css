@@ -64,9 +64,6 @@ Cabeçalho
 .cabecalho {
 	background-color: #5c7a99;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-	position: fixed;
-	width: 100%;
-	z-index: 20;
 }
 
 .cabecalho > div {
@@ -109,60 +106,48 @@ Cabeçalho
 /*
 Introdução
 */
-.introducao-imagem {
-	margin-bottom: 60px;
-}
-
 .introducao {
-	padding: 30px 10px;
-}
-
-.introducao-conteudo {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	margin: 10px 0;		
+	justify-content: center;	
+	padding: 60px 10px;
 }
 
-.introducao-conteudo h1 {
+.introducao h1 {
 	color: #5c7a99;
-	font-size: 3.5em;	
+	font-size: 2.25em;	
 	text-align: center;
 }
 
-.introducao-conteudo h1:after,
+.introducao h1:after,
 .introducao-citacao p:after {
 	background-color: #fd8283;
 	content: "";
 	display: flex;
 	height: 5px;
-	margin: 5px auto 20px auto;	
-	width: 20%;
+	margin: 10px auto 20px auto;	
+	width: 15%;
 }
 
-.introducao-conteudo p {
+.introducao  p {
 	color: #8fa1b3;	
-	margin: 5px 20px;
-	text-align: left;
-
+	margin: 5px 20px;	
 }
 
 .introducao-citacao {
 	background-color: #5c7a99;	
-	padding: auto 25px;
 	text-align: center;
-	padding: 60px 0;
+	padding: 40px 0;
 }
-
 
 .introducao-citacao p {
 	color: #f2faff;
 	padding: 0 10px;
 }
+
 .introducao-citacao p:after {
 	height: 3px;
-	width: 50px;
-	margin-top: 10px;
+	width: 30px;
 }
 
 .introducao-citacao cite { 
