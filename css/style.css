@@ -29,6 +29,13 @@ main {
 	vertical-align: baseline;
 }
 
+p {
+	font-family: 'Alice', serif;
+	font-size: 1.125em;
+	line-height: 1.25em;
+
+}
+
 a {
 	text-decoration: none;
 }
@@ -38,35 +45,41 @@ ul {
 }
 
 img {
+	border: 0;
 	display: block;
 	max-width: 100%;
-	border: 0;
+
 }	
 
-/* -------------- Gerais (Estilos que se repetem) -------------- */
+/* -------------- Gerais -------------- */
 .container {
 	max-width: 1280px;
 	margin: 0 auto;
 }
 
-.cabecalho > div {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-}
 
 /*
 Cabeçalho
 */
 .cabecalho {
 	background-color: #5c7a99;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+	position: fixed;
+	width: 100%;
+	z-index: 20;
+}
+
+.cabecalho > div {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .cabecalho-logo {
-	width: 100px;
-	padding: 15px;
 	margin: 0 auto;
+	padding: 20px 10px;
+	width: 80px;
 }
 
 .cabecalho-menu ul {
@@ -76,18 +89,16 @@ Cabeçalho
 }
 
 .cabecalho-menu li {
-	margin: 5px;
-	border: 2px solid #fd8283;
-	flex: 1 2;
-
+	border: 1px solid rgba(255, 255, 255, .1);
+	margin: 0 5px;
 }
 
 .cabecalho-menu a {
-	font-size: 1.25em;	
-	padding: 10px 25px;
-	color: #F2FAFF;	
+	color: #f2faff;	
 	display: flex;
-	justify-content: center;
+	font-size: 1em;
+	justify-content: center;	
+	padding: 10px;
 	transition: all .3s ease;
 }
 
@@ -99,9 +110,7 @@ Cabeçalho
 Introdução
 */
 .introducao-imagem {
-	margin-bottom: 30px;
-
-
+	margin-bottom: 60px;
 }
 
 .introducao {
@@ -116,35 +125,54 @@ Introdução
 }
 
 .introducao-conteudo h1 {
+	color: #5c7a99;
 	font-size: 3.5em;	
 	text-align: center;
-	color: #5c7a99;
 }
 
-.introducao-conteudo h1:after {
-	margin: 0 auto;
+.introducao-conteudo h1:after,
+.introducao-citacao p:after {
+	background-color: #fd8283;
+	content: "";
+	display: flex;
+	height: 5px;
+	margin: 5px auto 20px auto;	
+	width: 20%;
 }
+
 .introducao-conteudo p {
-	font-size: 1.125em;
-	line-height: 1.25em;
+	color: #8fa1b3;	
 	margin: 5px 20px;
 	text-align: left;
-	color: #8fa1b3;
-	
+
 }
 
 .introducao-citacao {
+	background-color: #5c7a99;	
 	padding: auto 25px;
 	text-align: center;
-	background-color: #f2f2f2;	
+	padding: 60px 0;
 }
 
-.setas {
-	display: none;
+
+.introducao-citacao p {
+	color: #f2faff;
+	padding: 0 10px;
 }
+.introducao-citacao p:after {
+	height: 3px;
+	width: 50px;
+	margin-top: 10px;
+}
+
+.introducao-citacao cite { 
+	color: #f2faff;
+}
+
+
 /*
 Portfólio
-*
+*/
 
 .portfolio {
 	margin: 10px;
@@ -423,13 +451,7 @@ Conteúdo de introdução
 	margin-bottom: 30px;
 }
 
-.introducao-conteudo h1:after {
-	background-color: #fca915;
-	content: "";
-	display: block;
-	height: 3px;	
-	width: 20%;
-}
+
 
 .introducao-conteudo p {
 	color: #7c7c7c;
@@ -445,14 +467,7 @@ Conteúdo de introdução
 	font-style: italic;
 }
 
-.introducao-citacao p:after {
-	background-color: #fca915;
-	content: "";
-	display: block;
-	height: 2px;
-	margin: 10px auto;
-	width: 60px;
-}
+
 
 .introducao-citacao cite {
 	color: #11425d;
