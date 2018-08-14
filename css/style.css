@@ -293,7 +293,19 @@ Contato
 
 .container-contato {
 	width: 70%;
- }
+}
+
+@media screen and (min-width: 768px) {
+	.container-contato {
+		width: 35%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container-contato {
+		width: 25%;
+	}
+}
 
 .contato > div {
 	display: flex;
@@ -345,3 +357,5 @@ Contato
 .rodape p {
 	font-family: 'Questrial', sans-serif;
 }
+
+
