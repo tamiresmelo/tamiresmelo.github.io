@@ -227,18 +227,13 @@ Portfólio
 	width: 15px;
 }
 
-.portfolio button {
-	background-color: transparent;
-	border: 0;
-	margin: 40px;
-}
-
 .portfolio-btn {
 	border: 2px solid #fd8283;
 	border-radius: 5px;
 	color: #5c7a99;	
 	padding: 10px 20px;		
 	transition: all .5s ease;
+	margin: 40px 0;
 }
 
 .portfolio-btn:hover, .portfolio-btn a:hover {
@@ -288,6 +283,7 @@ Currículo
 /*
 Contato
 */
+
 .contato {
 	background-color: #5c7a99;	
 	border-top: 1px solid #ccc;
@@ -295,23 +291,25 @@ Contato
 	padding: 40px 0;
 }
 
+.container-contato {
+	width: 70%;
+ }
+
 .contato > div {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.contato button {
-	background-color: transparent;
-	border: 0;
-	margin: 15px auto;
-}
 
 .contato-email-btn {
 	border: 2px solid #f2faff;
 	border-radius: 5px;
 	color: #f2faff;	
 	font-size: 1.5em;
-	padding: 20px 100px;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+	margin: 15px 0;
 
 }
 
@@ -325,12 +323,13 @@ Contato
 .contato ul {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	margin: 10px;
+	justify-content: space-between;
+	margin: 10px 0;
+	width: 100%;
 }
 
 .contato li {
-	margin: 10px;
+	width: 44px;
 }
 
 .contato li:hover {
