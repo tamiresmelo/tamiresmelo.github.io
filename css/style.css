@@ -88,10 +88,15 @@ Cabeçalho
 	width: 80px;
 }
 
+.cabecalho-menu {
+	width: 100%;
+}
+
 .cabecalho-menu ul {
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 20px;
+	justify-content: center;
 }
 
 .cabecalho-menu li {
@@ -104,7 +109,7 @@ Cabeçalho
 	display: flex;
 	font-size: 1em;
 	justify-content: center;	
-	padding: 10px;
+	padding: 5px;
 	transition: all .3s ease;
 }
 
