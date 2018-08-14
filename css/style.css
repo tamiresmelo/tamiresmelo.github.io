@@ -57,7 +57,8 @@ img {
 
 .introducao h1:after,
 .introducao-citacao p:after,
-.portfolio h2:after {
+.portfolio h2:after,
+.curriculo h2:after {
 	background-color: #fd8283;
 	content: "";
 	display: flex;
@@ -242,56 +243,53 @@ Portfólio
 
 /*
 Currículo
-*
+*/
+
 .curriculo {
-	background-color: #f2f2f2;
-	padding-bottom: 30px;
+	margin: 60px 10px;
 }
-.curriculo-sobre {
-	margin: 0 10px;
-	padding: 10px;
-	border-bottom: 5px solid #f2f2f2;
+
+.curriculo ul {
+	display: flex;
+	flex-wrap: wrap;
 }
-.curriculo h3 {
-	border-left: 3px solid #fca915;
-	padding: 0px 5px;
-	color: #11425d;
+
+.curriculo h2 {
+	color: #5c7a99;
+	font-size: 3.5em;	
+	margin-bottom: 25px;
+	text-align: center;
+}
+.curriculo-sobre h3 {
+	border-left: 3px solid #5c7a99;
+	color: #5c7a99;
 	font-size: 1.5em;
-	margin: 0px;
-	margin: 10px 0;
-}
-.curriculo p {
-	color: #525252;
+	margin: 20px;
+	padding-left: 5px;
 }
 
-.curriculo-competencias {
-	margin: 30px 20px;
-	
+
+.curriculo-sobre p {
+	color: #5c7a99;
+	margin: 5px 20px;
 }
 
-.curriculo-competencias p {
-	color: #fca915;
+.curriculo-resumo {
+	border: 5px solid #fd8283;
+	margin: 30px 10px;
+}
 
+.contato {
+	background-color: #5c7a99;	
+	padding: 40px 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
-.curriculo-competencias li {
-	padding: 5px 30px;
-	color: #11425d;
 
-}
-.curriculo-competencias li:before {
-	background-color: #ccc;
-	content: '';
-	display: block;
-	height: 2px;
-	margin: 0 5px;
-	position: relative;
-	top: 12px;
-	left: -25px;
-	width: 10px;
-}
 .contato ul {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	margin: 30px 10px;
 }
 
@@ -311,9 +309,9 @@ Currículo
 
 }
 .rodape {
-	color: #525252;
-	padding: 15px;
-	background-color: #f2f2f2;
+	color: #5c7a99;
+	padding: 20px 10px;
+	background-color: #f2faff;
 
 }
 
