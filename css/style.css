@@ -137,6 +137,11 @@ Introdução
 	color: #8fa1b3;	
 	margin: 5px 20px;	
 }
+@media screen and (min-width: 768px) {
+	.introducao p {
+		width: 70%;
+	}
+}
 
 .introducao-citacao {
 	background-color: #5c7a99;	
