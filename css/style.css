@@ -155,6 +155,12 @@ Introdução
 	color: #f2faff;
 	padding: 0 10px;
 }
+@media screen and (min-width: 768px) {
+	.introducao-citacao p {
+		margin: 0 auto;
+		width: 70%;
+	}
+}
 
 .introducao-citacao p:after {
 	height: 3px;
