@@ -371,7 +371,7 @@ Currículo
 }
 
 .curriculo-sobre h3 {
-	border-left: 3px solid #ccc;
+	border-left: 5px solid #fd8283;
 	color: #5c7a99;
 	font-size: 1.5em;
 	margin: 20px;
@@ -381,11 +381,12 @@ Currículo
 .curriculo-sobre p {
 	color: #5c7a99;
 	margin: 5px 20px;
+	padding: 0 10px;
 }
 
 .curriculo-resumo {
 	border-radius: 5px;
-	border: 5px solid #fd8283;
+	border: 2px solid #fd8283;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 	margin: 30px 10px;
 	order: 1;
@@ -403,12 +404,12 @@ Contato
 }
 
 .container-contato {
-	width: 40%;
+	width: 60%;
 }
 
 @media screen and (min-width: 768px) {
 	.container-contato {
-		width: 30%;
+		width: 35%;
 	}
 }
 @media screen and (min-width: 1024px) {
