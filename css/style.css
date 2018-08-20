@@ -87,6 +87,11 @@ Cabeçalho
 	padding: 20px 10px;
 	width: 80px;
 }
+@media screen and (min-width: 768px) {
+	.cabecalho-logo  {
+		width: 90px;
+	}
+}
 
 .cabecalho-menu {
 	width: 100%;
@@ -111,6 +116,13 @@ Cabeçalho
 	justify-content: center;	
 	padding: 5px;
 	transition: all .3s ease;
+}
+@media screen and (min-width: 768px) {
+	.cabecalho-menu a  {
+		font-size: 1.25em;		
+		padding: 10px 15px;
+		margin: 0 10px;
+	}
 }
 
 .cabecalho-menu a:hover {
