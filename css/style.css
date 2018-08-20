@@ -335,18 +335,12 @@ Contato
 }
 
 .container-contato {
-	width: 70%;
+	width: 55%;
 }
 
 @media screen and (min-width: 768px) {
 	.container-contato {
 		width: 35%;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.container-contato {
-		width: 25%;
 	}
 }
 
