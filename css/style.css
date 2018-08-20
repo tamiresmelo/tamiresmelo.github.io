@@ -64,7 +64,7 @@ img {
 	display: flex;
 	height: 5px;
 	margin: 10px auto 20px auto;	
-	width: 15%;
+	width: 30px;
 }
 
 /*
@@ -150,9 +150,15 @@ Introdução
 	color: #8fa1b3;	
 	margin: 5px 20px;	
 }
+
 @media screen and (min-width: 768px) {
+	.introducao {
+		flex-direction: column;
+	}
 	.introducao p {
-		width: 70%;
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
 	}
 }
 
@@ -407,5 +413,4 @@ Contato
 .rodape p {
 	font-family: 'Questrial', sans-serif;
 }
-
 
