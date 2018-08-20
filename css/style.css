@@ -93,6 +93,12 @@ Cabeçalho
 	}
 }
 
+@media screen and (min-width: 1024px) {
+	.cabecalho-logo  {
+		width: 100px;
+	}
+}
+
 .cabecalho-menu {
 	width: 100%;
 }
@@ -107,6 +113,11 @@ Cabeçalho
 .cabecalho-menu li {
 	border: 1px solid rgba(255, 255, 255, .1);
 	margin: 0 5px;
+}
+@media screen and (min-width: 1024px) {
+	.cabecalho-menu li {
+		margin: 0 10px;]
+	}
 }
 
 .cabecalho-menu a {
