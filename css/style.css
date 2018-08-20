@@ -280,12 +280,29 @@ Currículo
 	flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+	.curriculo li  {
+		margin: 10px auto;
+		width: 68%;
+	}
+}
+
 .curriculo h2 {
 	color: #5c7a99;
 	font-size: 3.5em;	
 	margin-bottom: 25px;
 	text-align: center;
 }
+@media screen and (min-width: 768px) {
+	.curriculo h2,
+	.curriculo h2:after {
+		margin-bottom: 0;
+	}
+	.curriculo h2:after {
+		width: 4.5%;
+	}
+}
+
 .curriculo-sobre h3 {
 	border-left: 3px solid #5c7a99;
 	color: #5c7a99;
