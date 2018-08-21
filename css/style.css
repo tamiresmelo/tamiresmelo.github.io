@@ -113,6 +113,7 @@ Cabeçalho
 .cabecalho-menu li {
 	border: 1px solid rgba(255, 255, 255, .1);
 	margin: 0 5px;
+	border-radius: 5px;
 }
 @media screen and (min-width: 1024px) {
 	.cabecalho-menu li {
