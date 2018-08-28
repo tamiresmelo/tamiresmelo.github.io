@@ -135,11 +135,17 @@ Cabeçalho
 		padding: 10px 15px;
 		margin: 0 10px;
 	}
+
 }
 
 .cabecalho-menu li:hover {
 	background-color: #fd8283;	
 		transition: all .3s ease;
+}
+
+.menu-ativo {
+	background-color: #fd8283;
+	border-radius: 5px;
 }
 
 /*
@@ -307,7 +313,7 @@ Portfólio
 	transition: all .5s ease;
 	margin: 30px auto 0 auto;
 	text-align: center;
-	width: 27%;
+	width: 70%;
 }
 @media screen and (min-width: 768px) {
 	.portfolio-btn {
