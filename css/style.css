@@ -3,6 +3,7 @@
 	box-sizing: border-box;
 }
 
+
 html,
 body,
 div,
@@ -137,15 +138,11 @@ Cabeçalho
 	}
 
 }
-
-.cabecalho-menu li:hover {
-	background-color: #fd8283;	
+@media screen and (min-width: 1024px){
+	.cabecalho-menu li:hover {
+		background-color: #fd8283;	
 		transition: all .3s ease;
-}
-
-.menu-ativo {
-	background-color: #fd8283;
-	border-radius: 5px;
+	}
 }
 
 /*
