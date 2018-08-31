@@ -386,10 +386,13 @@ Portfólio
 	color: #5c7a99;	
 	padding: 10px 20px;		
 	transition: all .5s ease;
-	margin: 30px auto 0 auto;
 	text-align: center;
 	width: 180px;
 }
+.portfolio-btn {
+	margin: 30px auto 0 auto;
+}
+
 @media screen and (min-width: 768px) {
 	.portfolio-btn {
 		margin: 0 auto;
