@@ -237,6 +237,7 @@ Portfólio
 	color: #8fa1b3;	
 	margin: 5px 20px;
 }
+
 @media screen and (min-width: 768px) {
 	.portfolio {
 		margin: 60px auto;
@@ -306,7 +307,8 @@ Portfólio
 	width: 15px;
 }
 
-.portfolio-btn {
+.portfolio-btn, 
+.curriculo-btn {
 	border: 2px solid #fd8283;
 	border-radius: 5px;
 	color: #5c7a99;	
@@ -314,7 +316,7 @@ Portfólio
 	transition: all .5s ease;
 	margin: 30px auto 0 auto;
 	text-align: center;
-	width: 70%;
+	width: 180px;
 }
 @media screen and (min-width: 768px) {
 	.portfolio-btn {
@@ -330,7 +332,8 @@ Portfólio
 	}
 }
 
-.portfolio-btn:hover, .portfolio-btn a:hover {
+.portfolio-btn:hover,
+.curriculo-btn:hover {
 	background-color: #fd8283;
 	color: #fff;
 }
@@ -400,6 +403,11 @@ Currículo
 	order: 1;
 }
 
+.curriculo-btn {
+	display: flex;
+	margin: 10px auto;
+	justify-content: center;
+}
 /*
 Contato
 */
