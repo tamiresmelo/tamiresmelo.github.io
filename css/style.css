@@ -470,6 +470,8 @@ Contato
 	color: #5c7a99;
 	padding: 20px 10px;
 	background-color: #f2faff;
+	display: flex;
+	justify-content: center;
 }
 
 .rodape p {
