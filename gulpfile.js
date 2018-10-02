@@ -8,7 +8,7 @@ const browserSync = require ('browser-sync').create();
 function compilaSass(){
   return gulp.src('css/scss/*.scss')
   .pipe(sass({
-    outputStyle: 'compressed'
+    outputStyle: 'expanded'//'compressed'
   }))
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
