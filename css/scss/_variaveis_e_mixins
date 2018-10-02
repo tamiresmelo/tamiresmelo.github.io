@@ -2,11 +2,12 @@
 $corPrincipal: #5c7a99;
 $corSecundaria: #fd8283;
 $corSuporte: #f2f2f2;
-
+$corSuporte2: #8fa1b3;	
 $transicao: all .3s ease;
 $shadow: 0 5px 10px rgba(0, 0, 0, .2);
 $border-style: 1px solid rgba(255, 255, 255, .1);
 $radius: 5px;
+
 
 @mixin text-center {
 	text-align: center;
@@ -28,4 +29,13 @@ $radius: 5px;
 
 @mixin direction {
 	flex-direction: column;
+}
+
+@mixin pseudo($display: flex, $content: ''){
+    content: $content;
+    display: $display;
+	background-color: $corSecundaria;
+	height: 5px;
+	margin: 10px auto 20px auto;	
+	width: 30px;
 }
