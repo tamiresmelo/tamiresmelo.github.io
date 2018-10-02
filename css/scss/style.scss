@@ -59,6 +59,7 @@
 		text-align: center;
 		&:after {
 			@include pseudo;
+			height: 5px;
 		}
 	}
 	&__texto {
@@ -67,10 +68,10 @@
 	}
 	&__citacao {
 		@include text-center;
+		@include border;
 		background-color: $corPrincipal;	
 		padding: 40px 0;
 		border-top: 1px solid $corSuporte3;
-		border-bottom: 1px solid $corSuporte3;
 	}
 }
 
@@ -80,9 +81,61 @@
 		padding: 0 10px;
 		&:after {
 			@include pseudo;
+			height: 3px;
 		}
 	}
 	&__autor {
 		color: $corSuporte;
+	}
+}
+
+//Currículo
+.curriculo {
+	@include border;
+	margin: 30px 10px;
+	padding-top: 30px;
+	&__titulo {
+		@include text-center;
+		color: $corPrincipal;
+		font-size: 3.5em;	
+		margin-bottom: 25px;
+		&:after {
+			@include pseudo;
+			height: 5px;
+		}
+	}
+	&__sobre {
+		@include flex;
+	}
+	&__resumo {
+		border-radius: 5px;
+		border: 2px solid $corSuporte;
+		box-shadow: $shadow;
+		margin: 30px 10px;
+		height: 100%;
+	}
+}
+
+.sobre {
+	&__titulo {
+		border-left: 4px solid $corSecundaria;
+		color: $corPrincipal;
+		font-size: 1.5em;
+		margin: 20px;
+		padding-left: 5px;
+	}
+	&__texto {
+		color: $corPrincipal;
+		margin: 5px 20px;
+		padding: 0 10px;
+	}
+}
+
+.resumo {
+	&__button {
+		@include flex;
+		@include flex-centraliza;
+		@include text-center;
+		@include button;
 	}
 }

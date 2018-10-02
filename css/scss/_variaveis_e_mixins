@@ -36,7 +36,22 @@ $radius: 5px;
     content: $content;
     display: $display;
 	background-color: $corSecundaria;
-	height: 4px;
 	margin: 10px auto 20px auto;	
 	width: 30px;
+}
+
+@mixin border {
+	border-bottom: 1px solid $corSuporte3;
+}
+
+@mixin button {
+	@include text-center;
+	margin: 10px auto;
+	border: 2px solid $corSecundaria;
+	border-radius: $radius;
+	color: $corPrincipal;	
+	padding: 10px 20px;		
+	transition: &transicao;
+	width: 180px;
+
 }

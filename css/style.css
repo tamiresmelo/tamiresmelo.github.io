@@ -156,9 +156,9 @@ img {
   display: -ms-flexbox;
   display: flex;
   background-color: #fd8283;
-  height: 100px;
   margin: 10px auto 20px auto;
   width: 30px;
+  height: 5px;
 }
 
 .introducao__texto {
@@ -168,10 +168,10 @@ img {
 
 .introducao__citacao {
   text-align: center;
+  border-bottom: 1px solid #ccc;
   background-color: #5c7a99;
   padding: 40px 0;
   border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
 }
 
 .citacao__texto {
@@ -185,11 +185,90 @@ img {
   display: -ms-flexbox;
   display: flex;
   background-color: #fd8283;
-  height: 100px;
   margin: 10px auto 20px auto;
   width: 30px;
+  height: 3px;
 }
 
 .citacao__autor {
   color: #f2f2f2;
+}
+
+.curriculo {
+  border-bottom: 1px solid #ccc;
+  margin: 30px 10px;
+  padding-top: 30px;
+}
+
+.curriculo__titulo {
+  text-align: center;
+  color: #5c7a99;
+  font-size: 3.5em;
+  margin-bottom: 25px;
+}
+
+.curriculo__titulo:after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fd8283;
+  margin: 10px auto 20px auto;
+  width: 30px;
+  height: 5px;
+}
+
+.curriculo__sobre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.curriculo__resumo {
+  border-radius: 5px;
+  border: 2px solid #f2f2f2;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 30px 10px;
+  height: 100%;
+}
+
+.sobre__titulo {
+  border-left: 4px solid #fd8283;
+  color: #5c7a99;
+  font-size: 1.5em;
+  margin: 20px;
+  padding-left: 5px;
+}
+
+.sobre__texto {
+  color: #5c7a99;
+  margin: 5px 20px;
+  padding: 0 10px;
+}
+
+.resumo__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  margin: 10px auto;
+  border: 2px solid #fd8283;
+  border-radius: 5px;
+  color: #5c7a99;
+  padding: 10px 20px;
+  -webkit-transition: .resumo__button transicao;
+  transition: .resumo__button transicao;
+  width: 180px;
 }
