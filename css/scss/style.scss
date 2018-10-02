@@ -12,5 +12,41 @@
 	box-shadow: $shadow;
 	.container {
 		@include flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		@include centraliza;
+		padding: 20px 10px; 
+		width: 80px;
+	}
+	&__menu {
+		width: 100%;
+
+	}
+}
+.menu {
+	&__item {
+		@include flex;
+		@include flex-centraliza;
+		margin-bottom: 20px;
+
+	}
+}
+
+.menu {
+	&__link {
+		@include flex;
+		@include flex-centraliza; 
+		border: $border-style;
+		color: $corSuporte;
+		margin: 0 5px;
+		padding: 5px;
+		transition: $transicao;
+		border-radius: $radius;
+
+
+
+
 	}
 }
