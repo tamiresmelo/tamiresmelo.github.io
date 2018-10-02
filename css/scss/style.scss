@@ -65,4 +65,24 @@
 		color: $corSuporte2;
 		margin: 5px 20px;
 	}
+	&__citacao {
+		@include text-center;
+		background-color: $corPrincipal;	
+		padding: 40px 0;
+		border-top: 1px solid $corSuporte3;
+		border-bottom: 1px solid $corSuporte3;
+	}
+}
+
+.citacao {
+	&__texto {
+		color: $corSuporte;
+		padding: 0 10px;
+		&:after {
+			@include pseudo;
+		}
+	}
+	&__autor {
+		color: $corSuporte;
+	}
 }

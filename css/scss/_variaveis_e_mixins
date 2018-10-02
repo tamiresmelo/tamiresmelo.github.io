@@ -3,6 +3,7 @@ $corPrincipal: #5c7a99;
 $corSecundaria: #fd8283;
 $corSuporte: #f2f2f2;
 $corSuporte2: #8fa1b3;	
+$corSuporte3: #ccc;	
 $transicao: all .3s ease;
 $shadow: 0 5px 10px rgba(0, 0, 0, .2);
 $border-style: 1px solid rgba(255, 255, 255, .1);
@@ -35,7 +36,7 @@ $radius: 5px;
     content: $content;
     display: $display;
 	background-color: $corSecundaria;
-	height: 5px;
+	height: 4px;
 	margin: 10px auto 20px auto;	
 	width: 30px;
 }

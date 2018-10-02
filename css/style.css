@@ -156,7 +156,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   background-color: #fd8283;
-  height: 5px;
+  height: 100px;
   margin: 10px auto 20px auto;
   width: 30px;
 }
@@ -164,4 +164,32 @@ img {
 .introducao__texto {
   color: #8fa1b3;
   margin: 5px 20px;
+}
+
+.introducao__citacao {
+  text-align: center;
+  background-color: #5c7a99;
+  padding: 40px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.citacao__texto {
+  color: #f2f2f2;
+  padding: 0 10px;
+}
+
+.citacao__texto:after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fd8283;
+  height: 100px;
+  margin: 10px auto 20px auto;
+  width: 30px;
+}
+
+.citacao__autor {
+  color: #f2f2f2;
 }
