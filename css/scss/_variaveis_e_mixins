@@ -1,0 +1,15 @@
+//Variáveis
+$corPrincipal: #5c7a99;
+$corSecundaria: #fd8283;
+
+$shadow: 0 5px 10px rgba(0, 0, 0, .2);
+
+
+@mixin centraliza {
+	margin: 0 auto;
+}
+
+@mixin flex {
+	display: flex;
+	flex-wrap: wrap;
+}

@@ -1,0 +1,16 @@
+@import 'geral';
+@import 'resets';
+@import 'variaveis_e_mixins';
+
+.container {
+	@include centraliza;
+	max-width: 1280px;
+}
+
+.cabecalho {
+	background-color: $corPrincipal;
+	box-shadow: $shadow;
+	.container {
+		@include flex;
+	}
+}
