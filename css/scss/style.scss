@@ -29,15 +29,15 @@
 		&:hover {
 			background-color: $corSecundaria;
 			color: $corSuporte;
+			transition: $transicao;
 		}
 
 	}
 }
 
 //main
-.main {
-	
-	padding: 60px 10px;
+.main {	
+	padding: 30px 10px;
 	background-color: $corPrincipal;
 	margin: 0 20px;
 	height: auto;
@@ -46,7 +46,9 @@
 		@include flex;
 	}
 	&__resumo {
-		margin: 10px;
+		@include flex;	
+		justify-content: center;
+		margin: 15px;
 	}
 }
 
@@ -56,12 +58,6 @@
     padding-left: 5px;
   }
 }
-
-
-
-
-
-
 
 
 
@@ -81,7 +77,7 @@
 		color: $corSuporte;
 		margin: 20px 0;
 		display: block;
-		border: 1px solid #f2f2f2;
+		border: 1px solid $corSuporte;
 		padding: 15px;
 		box-shadow: $shadow;
 		border-radius: $radius;
@@ -126,14 +122,21 @@
 }
 
 
+.main {
+	&__redes {
+		margin-top: 60px;
 
+	}
+}
 .redes {
 	&__item {
 		color: $corSuporte;
 		padding: 5px;
-		font-size: 14px;
+		font-size: 1em;
 		&:hover {
-			background-color: $corSecundaria;
+			background-color: rgba(255, 255, 255, 0.8);
+			border-radius: $radius;
+			color: $corPrincipal;
 		}
 
 	}
@@ -142,3 +145,76 @@
 
 
 
+
+//Currículo
+.portfolio {
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: $shadow;
+	padding: 10px 0;
+	border-radius: $radius;
+	&__trabalhos {
+		@include flex;
+	    margin: 10px;
+	}
+}
+
+
+.trabalhos {
+	&__item {
+	    position: relative;
+	    flex: 1 2 250px;
+	    margin: 10px;
+	    cursor: pointer;
+	}
+}
+.trabalhos__item:hover .item__info {
+    @include flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.item__info {
+    display: none;
+}
+
+.item__info--align {
+	@include flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.2);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+    color: $corSuporte;
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.1);
+    font-family: $fontPrincipal;
+    transition: $transicao;
+}
+
+.portfolio {
+	&__buttom {
+		@include flex;
+		justify-content: center;
+		margin: 10px;
+		padding: 5px;	
+		&--active {
+			color: $corSuporte;
+			&:hover {
+			border-bottom: 2px solid $corSecundaria;
+
+		}
+	}
+	}
+}
+
+.rodape {
+	font-family: $fontPrincipal;
+	margin: 10px;
+	text-align: center;
+	color: $corPrincipal;
+}

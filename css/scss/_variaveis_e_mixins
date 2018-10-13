@@ -7,6 +7,7 @@ $transicao: all .3s ease;
 $shadow: 0 5px 10px rgba(0, 0, 0, .2);
 $border-style: 1px solid rgba(255, 255, 255, .1);
 $radius: 5px;
+$fontPrincipal: 'Questrial', sans-serif;
 
 @mixin flex {
 	display: flex;
