@@ -2,10 +2,10 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>Tamires Melo - UI Designer & Front-end Developer</title>
+	<title>Tamires Melo - UX/UI Designer & Front-end Developer</title>
 	<meta name="description" content="Olá, meu nome é Tamires, estudo Design Visual na UFRGS, foco meu aprendizado principalmente nas áreas de UX/UI Design e desenvolvimento Front-End">	
 	<meta property="og:type" content="website">
-	<meta property="og:title" content=" Tamires Melo | UI Designer & Front-End Developer">
+	<meta property="og:title" content=" Tamires Melo | UX/UI Designer & Front-End Developer">
 	<meta property="og:description" content="Olá, meu nome é Tamires, estudo Design Visual na UFRGS, foco meu aprendizado principalmente nas áreas de UX/UI Design e desenvolvimento Front-End."/>
 	<meta property="og:url" content="http://TamiresMelo.github.io/">
 	<meta property="og:image" content="img/tamires-profile.jpg">
@@ -18,8 +18,9 @@
 <body>
 
 	<!----- Cabeçalho ----->
-	<header>		
-		<a class="cabecalho__logo" href="index.html">Tamires Melo</a>
+	<header class="cabecalho">		
+		<a class="cabecalho__logo" href="index.html">Tamires Melo</a>	
+		<a class="cabecalho__contato seta-r" href="mailto:tamiresdaianemelo@gmail.com?Subject=Hello%20again" target="_top">Contate-me</a>	
 	</header>
 
 	<!----- Conteúdo principal ----->
@@ -33,9 +34,6 @@
 				<li class="main__resumo">
 		 			<a class="resumo__link" href="img/curriculo-tamires.pdf" target="_blank">Currículo Resumido</a>
 		 		</li>
-		 		<li>	
-					<a class ="contato-email-btn" href="mailto:tamiresdaianemelo@gmail.com?Subject=Hello%20again" target="_top">Contate-me</a>	
-				</li>
 
 				<!----- Redes Sociais ----->
 				<li>
@@ -64,31 +62,35 @@
 				</li>		
 			</ul>
 
-			<!----- Portfólio ----->
-			<ul>
-				<li>
-					<a href="https://www.behance.net/gallery/69718835/Personal-Portfolio-Website" target="_blank">		
-						<img src="img/portfolio/site-tamires.jpg" alt="Projeto Website Tamires Melo">		
-						<p>Personal Portfolio Website</p>	
-						<span>UX-UI / Front-end</span>		 		
-				 	</a>	
-				</li>		
-				<li>
-					<a href="https://www.behance.net/gallery/59147969/3D-Mech-Robot" target="_blank">		
-						<img src="img/portfolio/robot.jpg" alt="Projeto Modelagem 3D Mech Robot">			
-						<p>Mech Robot</p>	
-						<span>Modelagem 3D</span>		 		
-				 	</a>	
-				</li>
-				<li>
-					<a href="https://www.behance.net/gallery/53521509/Modelagem-3D-Luminaria" target="_blank">
-						<img src="img/portfolio/luminaria.jpg" alt="Projeto Modelagem 3D luminária de mesa">
-						<p>Luminária de mesa</p>
-					 	<span>Modelagem 3D</span>
-				 	</a>
-				</li>
-			</ul>
-			<a class="portfolio-btn" href="https://www.behance.net/tamiresdaiafe1" target="_blank">Todos os projetos</a>
+			<!----- Trabalhos ----->
+			<div class="portfolio">
+				<ul class="portfolio__trabalhos">
+					<li class="trabalhos__item">
+						<a href="https://www.behance.net/gallery/69718835/Personal-Portfolio-Website" target="_blank">		
+							<img src="img/portfolio/site-tamires.jpg" alt="Projeto Website Tamires Melo">
+							<div class="item__info">		
+								<p>Personal Portfolio Website</p>	
+								<span>UX-UI / Front-end</span>	
+							</div>	 		
+					 	</a>	
+					</li>		
+					<li>
+						<a href="https://www.behance.net/gallery/59147969/3D-Mech-Robot" target="_blank">		
+							<img src="img/portfolio/robot.jpg" alt="Projeto Modelagem 3D Mech Robot">			
+							<p>Mech Robot</p>	
+							<span>Modelagem 3D</span>		 		
+					 	</a>	
+					</li>
+					<li>
+						<a href="https://www.behance.net/gallery/53521509/Modelagem-3D-Luminaria" target="_blank">
+							<img src="img/portfolio/luminaria.jpg" alt="Projeto Modelagem 3D luminária de mesa">
+							<p>Luminária de mesa</p>
+						 	<span>Modelagem 3D</span>
+					 	</a>
+					</li>
+				</ul>
+				<a class="portfolio-btn" href="https://www.behance.net/tamiresdaiafe1" target="_blank">Todos os projetos</a>
+			</div>
 		</div>
 	</main>
 	<!----- Rodapé ----->

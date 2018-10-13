@@ -3,12 +3,16 @@
 @import 'variaveis_e_mixins';
 
 .container {
-	@include centraliza;
+	align-items: center;
+	justify-content: center;
 	max-width: 1280px;
 }
 
 //Cabeçalho
 .cabecalho {
+	@include flex;
+	justify-content: space-between;
+	align-items: center;
 	&__logo{
 		@include flex;
 		justify-content: left;
@@ -16,25 +20,51 @@
 		font-size: 1.375em;
 		color: $corSuporte2;
 	}
+	&__contato {
+		padding: 10px 20px;
+		margin: 0 20px;
+		border: 1px solid $corSecundaria;
+		color: $corPrincipal;
+		border-radius: $radius;
+		&:hover {
+			background-color: $corSecundaria;
+			color: $corSuporte;
+		}
 
+	}
 }
-
 
 //main
 .main {
-	@include flex;
+	
 	padding: 60px 10px;
 	background-color: $corPrincipal;
 	margin: 0 20px;
 	height: auto;
+	border-radius: $radius;
 	&__introducao {
 		@include flex;
 	}
 	&__resumo {
 		margin: 10px;
 	}
-
 }
+
+.seta-r {
+  &.seta-r:after {
+    content: "\2192";
+    padding-left: 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 .introducao {
 	&__titulo {
@@ -49,7 +79,12 @@
 	}
 	&__texto {
 		color: $corSuporte;
-		margin: 10px 0;
+		margin: 20px 0;
+		display: block;
+		border: 1px solid #f2f2f2;
+		padding: 15px;
+		box-shadow: $shadow;
+		border-radius: $radius;
 	}
 }
 
@@ -57,9 +92,40 @@
 	&__redes {
 		@include flex;
 		justify-content: center;
-
 	}
 }
+
+.resumo {
+	&__link {
+		color: $corSuporte;
+		padding: 3px;
+		font-size: 1.375em;
+		&:after {
+			@include pseudoArrow;
+			height: 8px;
+			width: 8px;
+			border-width: 2px 2px 0 0;
+			transform: rotate(45deg);
+			position: relative;
+			left: 210px;
+			top: -17px;
+		}
+		&:before {
+			@include pseudoArrow;
+			height: 5px;
+			width: 5px;
+			border-width: 1px 1px 0 0;	
+			left: 207px;
+			top: 14px;
+		}
+		&:hover {
+			color: $corSecundaria;
+		}
+	}
+
+}
+
+
 
 .redes {
 	&__item {
@@ -73,52 +139,6 @@
 	}
 }
 
-.resumo {
-	&__link{
-		color: $corSuporte;
-		padding: 3px;
-		&:hover {
-			border-bottom: 1px solid red;
-	}
-}
 
 
 
-//Currículo
-.curriculo {
-
-	margin: 30px 10px;
-	padding-top: 30px;
-	&__titulo {
-		@include text-center;
-		color: $corPrincipal;
-		font-size: 3.5em;	
-		margin-bottom: 25px;
-		&:after {
-			@include pseudo;
-			height: 5px;
-		}
-	}
-	&__sobre {
-		@include flex;
-	}
-
-}
-
-.sobre {
-	&__titulo {
-		border-left: 4px solid $corSecundaria;
-		color: $corPrincipal;
-		font-size: 1.5em;
-		margin: 20px;
-		padding-left: 5px;
-	}
-	&__texto {
-		color: $corPrincipal;
-		margin: 5px 20px;
-		padding: 0 10px;
-	}
-}
-
-
-}

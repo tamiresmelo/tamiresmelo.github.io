@@ -43,4 +43,5 @@ img {
 	border: 0;
 	display: block;
 	max-width: 100%;
+	object-fit: cover;
 }	

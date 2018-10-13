@@ -8,28 +8,16 @@ $shadow: 0 5px 10px rgba(0, 0, 0, .2);
 $border-style: 1px solid rgba(255, 255, 255, .1);
 $radius: 5px;
 
-
-@mixin text-center {
-	text-align: center;
-}
-
 @mixin flex {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-@mixin flex-centraliza {
-	align-items: center;
-	justify-content: center;
-}
 
 @mixin centraliza {
 	margin: 0 auto;
 }
 
-@mixin direction {
-	flex-direction: column;
-}
 
 @mixin pseudo($display: flex, $content: ''){
     content: $content;
@@ -41,14 +29,13 @@ $radius: 5px;
 	opacity: .8;
 }
 
-@mixin button {
-	@include text-center;
-	margin: 10px auto;
-	border: 2px solid $corSecundaria;
-	border-radius: $radius;
-	color: $corPrincipal;	
-	padding: 10px 20px;		
-	transition: &transicao;
-	width: 180px;
-
+@mixin pseudoArrow($display: flex, $content: ''){
+    content: $content;
+    display: $display;
+	transform: rotate(45deg);
+	position: relative;
+	border: 5px solid $corSecundaria;
 }
+
+
+
