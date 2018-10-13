@@ -9,89 +9,84 @@
 
 //Cabeçalho
 .cabecalho {
-	background-color: $corPrincipal;
-	box-shadow: $shadow;
-	.container {
+	&__logo{
 		@include flex;
-		justify-content: space-between;
-		align-items: center;
+		justify-content: left;
+		padding: 20px;
+		font-size: 1.375em;
+		color: $corSuporte2;
 	}
-	&__logo {
-		@include centraliza;
-		padding: 20px 10px; 
-		width: 80px;
-	}
-	&__menu {
-		width: 100%;
 
-	}
-}
-.menu {
-	&__item {
-		@include flex;
-		@include flex-centraliza;
-		margin-bottom: 20px;
-
-	}
 }
 
-.menu {
-	&__link {
-		@include flex;
-		@include flex-centraliza; 
-		border: $border-style;
-		color: $corSuporte;
-		margin: 0 5px;
-		padding: 5px;
-		transition: $transicao;
-		border-radius: $radius;
-	}
-}
 
-//Introdução
-.introducao {
+//main
+.main {
 	@include flex;
-	@include flex-centraliza;
 	padding: 60px 10px;
+	background-color: $corPrincipal;
+	margin: 0 20px;
+	height: auto;
+	&__introducao {
+		@include flex;
+	}
+	&__resumo {
+		margin: 10px;
+	}
+
+}
+
+.introducao {
 	&__titulo {
-		color: #5c7a99;
+		color: $corSuporte;
 		font-size: 2.25em;	
 		text-align: center;
+		letter-spacing: .1em;
 		&:after {
 			@include pseudo;
-			height: 5px;
+			height: 10px;
 		}
 	}
 	&__texto {
-		color: $corSuporte2;
-		margin: 5px 20px;
-	}
-	&__citacao {
-		@include text-center;
-		@include border;
-		background-color: $corPrincipal;	
-		padding: 40px 0;
-		border-top: 1px solid $corSuporte3;
+		color: $corSuporte;
+		margin: 10px 0;
 	}
 }
 
-.citacao {
-	&__texto {
-		color: $corSuporte;
-		padding: 0 10px;
-		&:after {
-			@include pseudo;
-			height: 3px;
-		}
-	}
-	&__autor {
-		color: $corSuporte;
+.main {
+	&__redes {
+		@include flex;
+		justify-content: center;
+
 	}
 }
+
+.redes {
+	&__item {
+		color: $corSuporte;
+		padding: 5px;
+		font-size: 14px;
+		&:hover {
+			background-color: $corSecundaria;
+		}
+
+	}
+}
+
+.resumo {
+	&__link{
+		color: $corSuporte;
+		padding: 3px;
+		&:hover {
+			border-bottom: 1px solid red;
+	}
+}
+
+
 
 //Currículo
 .curriculo {
-	@include border;
+
 	margin: 30px 10px;
 	padding-top: 30px;
 	&__titulo {
@@ -107,13 +102,7 @@
 	&__sobre {
 		@include flex;
 	}
-	&__resumo {
-		border-radius: 5px;
-		border: 2px solid $corSuporte;
-		box-shadow: $shadow;
-		margin: 30px 10px;
-		height: 100%;
-	}
+
 }
 
 .sobre {
@@ -131,11 +120,5 @@
 	}
 }
 
-.resumo {
-	&__button {
-		@include flex;
-		@include flex-centraliza;
-		@include text-center;
-		@include button;
-	}
+
 }

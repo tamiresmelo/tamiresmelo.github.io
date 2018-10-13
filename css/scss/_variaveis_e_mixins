@@ -2,8 +2,7 @@
 $corPrincipal: #5c7a99;
 $corSecundaria: #fd8283;
 $corSuporte: #f2f2f2;
-$corSuporte2: #8fa1b3;	
-$corSuporte3: #ccc;	
+$corSuporte2: #525252;	
 $transicao: all .3s ease;
 $shadow: 0 5px 10px rgba(0, 0, 0, .2);
 $border-style: 1px solid rgba(255, 255, 255, .1);
@@ -36,12 +35,10 @@ $radius: 5px;
     content: $content;
     display: $display;
 	background-color: $corSecundaria;
-	margin: 10px auto 20px auto;	
-	width: 30px;
-}
-
-@mixin border {
-	border-bottom: 1px solid $corSuporte3;
+	margin: 5px 0;	
+	width: 40px;
+	box-shadow: $shadow;
+	opacity: .8;
 }
 
 @mixin button {
