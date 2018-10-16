@@ -193,7 +193,7 @@
 .item__info {
     display: none;
 
-	&--align {
+	&__text {
 		@include flex;
 		align-items: center;
 		justify-content: center;
@@ -221,7 +221,7 @@
 			background-color: rgba(0, 0, 0, .1);
 			border: 1px solid rgba(0, 0, 0, .0);
 		}
-		
+
 		&--active {
 			color: $corSuporte;
 		}
