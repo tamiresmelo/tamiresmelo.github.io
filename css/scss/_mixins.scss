@@ -1,0 +1,27 @@
+@mixin flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@mixin centraliza {
+	margin: 0 auto;
+}
+
+@mixin pseudo($display: flex, $content: ''){
+    content: $content;
+    display: $display;
+	background-color: $corSecundaria;
+	margin: 5px 0;	
+	width: 40px;
+	box-shadow: $shadow;
+	opacity: .8;
+}
+
+@mixin pseudoArrow($display: flex, $content: ''){
+    content: $content;
+    display: $display;
+	transform: rotate(45deg);
+	position: relative;
+	border: 5px solid $corSecundaria;
+}
+
