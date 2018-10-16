@@ -15,10 +15,13 @@
 	align-items: center;
 	&__logo{
 		@include flex;
-		justify-content: left;
+		margin: 0 auto;
 		padding: 20px;
 		font-size: 1.375em;
 		color: $corSuporte2;
+		&:hover {
+			color: rgba(0, 0, 0, 0.5);;
+		}
 	}
 }
 
@@ -41,30 +44,28 @@
 
 .seta-r {
   &.seta-r:after {
-    content: "\2192";
-    padding-left: 5px;
+  	content: "\2192";
+  	padding-left: 5px;
   }
 }
-
-
-
 
 .introducao {
 	&__titulo {
 		color: $corSuporte;
-		font-size: 2.25em;	
-		text-align: center;
+		font-size: 2.25em;			
 		letter-spacing: .1em;
+		text-align: center;
+		margin: 0 auto;
 		&:after {
 			@include pseudo;
-			height: 10px;
+			height: px;
 		}
 	}
 	&__texto {
 		color: $corSuporte;
 		margin: 20px 0;
 		display: block;
-		border: 1px solid $corSuporte;
+		border: 1px solid rgba(255, 255, 255, .2);
 		padding: 15px;
 		box-shadow: $shadow;
 		border-radius: $radius;
@@ -194,7 +195,7 @@
 		justify-content: center;
 		margin: 10px 20px;
 		padding: 10px;	
-		border: 1px solid rgba(0, 0, 0, .1);
+		border: 1px solid rgba(0, 0, 0, .2);
 		&:hover {
 			background-color: rgba(0, 0, 0, .1);
 			border: 1px solid rgba(0, 0, 0, .0);
