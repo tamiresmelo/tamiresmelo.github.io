@@ -1,6 +1,7 @@
-@import 'geral';
 @import 'resets';
-@import 'variaveis_e_mixins';
+@import 'geral';
+@import 'variaveis';
+@import 'mixins';
 
 .container {
 	align-items: center;
@@ -58,7 +59,7 @@
 		margin: 0 auto;
 		&:after {
 			@include pseudo;
-			height: px;
+			height: 8px;
 		}
 	}
 	&__texto {
