@@ -94,21 +94,6 @@ img {
   color: #525252;
 }
 
-.cabecalho__contato {
-  padding: 10px 20px;
-  margin: 0 20px;
-  border: 1px solid #fd8283;
-  color: #5c7a99;
-  border-radius: 5px;
-}
-
-.cabecalho__contato:hover {
-  background-color: #fd8283;
-  color: #f2f2f2;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
 .main {
   padding: 30px 10px;
   background-color: #5c7a99;
@@ -230,16 +215,21 @@ img {
 }
 
 .main__redes {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .redes__item {
-  color: #f2f2f2;
-  padding: 5px;
-  font-size: 1em;
+  margin: 5px;
+  padding: 10px 0;
 }
 
-.redes__item:hover {
+.item__link {
+  color: #f2f2f2;
+  padding: 10px 15px;
+  font-size: 1.125em;
+}
+
+.item__link:hover {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   color: #5c7a99;
@@ -321,16 +311,18 @@ img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 10px;
-  padding: 5px;
+  margin: 10px 20px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.portfolio__buttom:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .portfolio__buttom--active {
   color: #f2f2f2;
-}
-
-.portfolio__buttom--active:hover {
-  border-bottom: 2px solid #fd8283;
 }
 
 .rodape {

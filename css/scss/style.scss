@@ -20,19 +20,6 @@
 		font-size: 1.375em;
 		color: $corSuporte2;
 	}
-	&__contato {
-		padding: 10px 20px;
-		margin: 0 20px;
-		border: 1px solid $corSecundaria;
-		color: $corPrincipal;
-		border-radius: $radius;
-		&:hover {
-			background-color: $corSecundaria;
-			color: $corSuporte;
-			transition: $transicao;
-		}
-
-	}
 }
 
 //main
@@ -124,15 +111,21 @@
 
 .main {
 	&__redes {
-		margin-top: 60px;
-
+		margin-top: 30px;
 	}
 }
 .redes {
-	&__item {
+	&__item {	
+		margin: 5px;	
+		padding: 10px 0;
+	}
+}
+
+.item {
+	&__link {
 		color: $corSuporte;
-		padding: 5px;
-		font-size: 1em;
+		padding: 10px 15px;
+		font-size: 1.125em;
 		&:hover {
 			background-color: rgba(255, 255, 255, 0.8);
 			border-radius: $radius;
@@ -141,7 +134,6 @@
 
 	}
 }
-
 
 
 
@@ -191,7 +183,7 @@
 	height: 100%;
 	text-align: center;
     color: $corSuporte;
-    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.1);
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, .1);
     font-family: $fontPrincipal;
     transition: $transicao;
 }
@@ -200,15 +192,16 @@
 	&__buttom {
 		@include flex;
 		justify-content: center;
-		margin: 10px;
-		padding: 5px;	
+		margin: 10px 20px;
+		padding: 10px;	
+		border: 1px solid rgba(0, 0, 0, .1);
+		&:hover {
+			background-color: rgba(0, 0, 0, .1);
+			border: 1px solid rgba(0, 0, 0, .0);
+		}
 		&--active {
 			color: $corSuporte;
-			&:hover {
-			border-bottom: 2px solid $corSecundaria;
-
 		}
-	}
 	}
 }
 
