@@ -14,14 +14,16 @@
 	@include flex;
 	justify-content: space-between;
 	align-items: center;
-	&__logo{
+
+	&__logo {
 		@include flex;
 		margin: 0 auto;
 		padding: 20px;
 		font-size: 1.375em;
 		color: $corSuporte2;
+
 		&:hover {
-			color: rgba(0, 0, 0, 0.5);;
+			color: rgba(0, 0, 0, 0.5);
 		}
 	}
 }
@@ -33,9 +35,11 @@
 	margin: 0 20px;
 	height: auto;
 	border-radius: $radius;
+
 	&__introducao {
 		@include flex;
 	}
+
 	&__resumo {
 		@include flex;	
 		justify-content: center;
@@ -44,24 +48,28 @@
 }
 
 .seta-r {
-  &.seta-r:after {
-  	content: "\2192";
-  	padding-left: 5px;
-  }
+
+	&:after {
+		content: "\2192";
+		padding-left: 5px;
+	}
 }
 
 .introducao {
+
 	&__titulo {
 		color: $corSuporte;
 		font-size: 2.25em;			
 		letter-spacing: .1em;
 		text-align: center;
 		margin: 0 auto;
+
 		&:after {
 			@include pseudo;
 			height: 8px;
 		}
 	}
+
 	&__texto {
 		color: $corSuporte;
 		margin: 20px 0;
@@ -74,6 +82,7 @@
 }
 
 .main {
+
 	&__redes {
 		@include flex;
 		justify-content: center;
@@ -81,10 +90,12 @@
 }
 
 .resumo {
+
 	&__link {
 		color: $corSuporte;
 		padding: 3px;
 		font-size: 1.375em;
+
 		&:after {
 			@include pseudoArrow;
 			height: 8px;
@@ -95,6 +106,7 @@
 			left: 210px;
 			top: -17px;
 		}
+
 		&:before {
 			@include pseudoArrow;
 			height: 5px;
@@ -103,6 +115,7 @@
 			left: 207px;
 			top: 14px;
 		}
+
 		&:hover {
 			color: $corSecundaria;
 		}
@@ -112,11 +125,14 @@
 
 
 .main {
+
 	&__redes {
 		margin-top: 30px;
 	}
 }
+
 .redes {
+
 	&__item {	
 		margin: 5px;	
 		padding: 10px 0;
@@ -124,16 +140,17 @@
 }
 
 .item {
+
 	&__link {
 		color: $corSuporte;
 		padding: 10px 15px;
 		font-size: 1.125em;
+
 		&:hover {
 			background-color: rgba(255, 255, 255, 0.8);
 			border-radius: $radius;
 			color: $corPrincipal;
 		}
-
 	}
 }
 
@@ -146,61 +163,65 @@
 	box-shadow: $shadow;
 	padding: 10px 0;
 	border-radius: $radius;
+
 	&__trabalhos {
 		@include flex;
 	    margin: 10px;
 	}
 }
 
-
 .trabalhos {
+
 	&__item {
 	    position: relative;
 	    flex: 1 2 250px;
 	    margin: 10px;
 	    cursor: pointer;
-	}
-}
-.trabalhos__item:hover .item__info {
-    @include flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
 
+		&:hover  .item__info {
+			@include flex;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+	}
 }
 
 .item__info {
     display: none;
-}
 
-.item__info--align {
-	@include flex;
-	align-items: center;
-	justify-content: center;
-	background: rgba(0, 0, 0, 0.2);
-	width: 100%;
-	height: 100%;
-	text-align: center;
-    color: $corSuporte;
-    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, .1);
-    font-family: $fontPrincipal;
-    transition: $transicao;
+	&--align {
+		@include flex;
+		align-items: center;
+		justify-content: center;
+		background: rgba(0, 0, 0, 0.2);
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	    color: $corSuporte;
+	    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, .1);
+	    font-family: $fontPrincipal;
+	    transition: $transicao;
+	}
 }
 
 .portfolio {
+
 	&__buttom {
 		@include flex;
 		justify-content: center;
 		margin: 10px 20px;
 		padding: 10px;	
 		border: 1px solid rgba(0, 0, 0, .2);
+
 		&:hover {
 			background-color: rgba(0, 0, 0, .1);
 			border: 1px solid rgba(0, 0, 0, .0);
 		}
+		
 		&--active {
 			color: $corSuporte;
 		}
