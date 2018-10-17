@@ -6,6 +6,7 @@
 .container {
 	align-items: center;
 	justify-content: center;
+	margin: 0 auto;
 	max-width: 1280px;
 }
 
@@ -26,7 +27,7 @@
 			justify-content: left;
 			margin: 0 20px;
 		}
-		
+
 		&:hover {
 			color: rgba(0, 0, 0, 0.5);
 		}
@@ -37,12 +38,17 @@
 .main {	
 	padding: 30px 10px;
 	background-color: $corPrincipal;
+
 	margin: 0 20px;
-	height: auto;
 	border-radius: $radius;
 
 	&__introducao {
 		@include flex;
+
+	@media screen and (min-width: $break-medium) {
+		width: 75%;
+		margin: 0 auto;
+	}
 	}
 
 	&__resumo {
@@ -183,14 +189,14 @@
 	    margin: 10px;
 	    cursor: pointer;
 
-		&:hover  .item__info {
+		&:hover .item__info {
 			@include flex;
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.3);
+			background-color: rgba(0, 0, 0, 0.4);
 		}
 	}
 }
@@ -218,9 +224,9 @@
 	&__buttom {
 		@include flex;
 		justify-content: center;
-		margin: 10px 20px;
-		padding: 10px;	
+		margin: 10px auto;
 		border: 1px solid rgba(0, 0, 0, .2);
+		width: 200px;
 
 		&:hover {
 			background-color: rgba(0, 0, 0, .1);
@@ -229,6 +235,7 @@
 
 		&--active {
 			color: $corSuporte;
+			padding: 10px 25px;	
 		}
 	}
 }
