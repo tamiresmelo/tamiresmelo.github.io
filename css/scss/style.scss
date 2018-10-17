@@ -21,7 +21,7 @@
 		margin: 0 auto;
 		padding: 20px;
 		font-size: 1.375em;
-		color: $corSuporte2;
+		color: $corSuporte;
 
 		@media screen and (min-width: $break-medium) {
 			justify-content: left;
@@ -29,7 +29,7 @@
 		}
 
 		&:hover {
-			color: rgba(0, 0, 0, 0.5);
+			color: rgba(255, 255, 255, 0.5);
 		}
 	}
 }
@@ -43,16 +43,23 @@
 	&__introducao {
 		@include flex;
 
-	@media screen and (min-width: $break-medium) {
-		width: 75%;
-		margin: 0 auto;
-	}
+		@media screen and (min-width: $break-medium) {
+			width: 75%;
+			margin: 0 auto;
+		}
 	}
 
 	&__resumo {
 		@include flex;	
 		justify-content: center;
-		margin: 15px;
+		padding: 5px;
+		margin: 30px;
+		border-top: 1px solid $corSecundaria;
+		border-bottom: 1px solid $corSecundaria;
+			@media screen and (min-width: $break-medium) {
+				width: 30%;
+				margin: 30px auto;
+		}
 	}
 }
 
@@ -83,7 +90,6 @@
 		color: $corSuporte;
 		margin: 20px 0;
 		display: block;
-		border: 1px solid rgba(255, 255, 255, .2);
 		padding: 15px;
 		box-shadow: $shadow;
 		border-radius: $radius;
@@ -132,7 +138,6 @@
 
 }
 
-
 .main {
 
 	&__redes {
@@ -142,8 +147,7 @@
 
 .redes {
 
-	&__item {	
-		margin: 5px;	
+	&__item {		
 		padding: 10px 0;
 	}
 }
@@ -154,6 +158,9 @@
 		color: $corSuporte;
 		padding: 10px;
 		font-size: 1.125em;
+			@media screen and (min-width: $break-medium) {
+				margin: 0 5px;
+		}
 
 		&:hover {
 			background-color: rgba(255, 255, 255, 0.8);
@@ -163,14 +170,11 @@
 	}
 }
 
-
-
-
 //Currículo
 .portfolio {
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(0, 0, 0, 0.1);
 	box-shadow: $shadow;
-	padding: 10px 0;
+	padding: 30px 0;
 	border-radius: $radius;
 
 	&__trabalhos {
@@ -222,13 +226,15 @@
 	&__buttom {
 		@include flex;
 		justify-content: center;
-		margin: 10px auto;
-		border: 1px solid rgba(0, 0, 0, .2);
+		margin: 15px auto;
+		border: 1px solid rgba(255, 255, 255, .3);
 		width: 200px;
+		border-radius: $radius;
 
 		&:hover {
 			background-color: rgba(0, 0, 0, .1);
 			border: 1px solid rgba(0, 0, 0, .0);
+
 		}
 
 		&--active {
@@ -239,8 +245,10 @@
 }
 
 .rodape {
+	border-top: 1px solid rgba(255, 255, 255, .3);
+	color: $corSuporte;
 	font-family: $fontPrincipal;
-	margin: 10px;
+	font-size: 1em;
+	padding: 10px;
 	text-align: center;
-	color: $corPrincipal;
 }
