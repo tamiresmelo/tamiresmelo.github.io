@@ -54,10 +54,7 @@ img {
 
 body {
   font-size: 1em;
-}
-
-html {
-  height: 100%;
+  background-color: #5c7a99;
 }
 
 .container {
@@ -112,7 +109,6 @@ html {
 
 .main {
   padding: 30px 10px;
-  background-color: #5c7a99;
   margin: 0 20px;
   border-radius: 5px;
 }
